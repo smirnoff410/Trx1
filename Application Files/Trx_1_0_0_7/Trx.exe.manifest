@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Trx.exe" version="1.0.0.7" publicKeyToken="b541348a115657ef" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="logonovy-02_1.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Trx" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Trx.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Параметры манифеста UAC
+          При необходимости изменить уровень контроля учетных записей Windows замените узел 
+          requestedExecutionLevel одним из следующих значений.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Если вы хотите использовать виртуализацию файлов и реестра для обратной 
+         совместимости, удалите узел requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AForge.Video.dll" size="20992">
+      <assemblyIdentity name="AForge.Video" version="2.2.5.0" publicKeyToken="CBFB6E07D173C401" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>uvpu0EyieCJwB0EnoEmN3gIsKp9Alsa7K448CLs9QE0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AForge.Video.DirectShow.dll" size="61440">
+      <assemblyIdentity name="AForge.Video.DirectShow" version="2.2.5.0" publicKeyToken="61EA4348D43881B7" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Zm1EeY2U6voe0hr3npvAKT/9lvhjq12H94vO6e+f/Ws=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Trx.exe" size="273400">
+      <assemblyIdentity name="Trx" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>wsbgLWSXb1gdE5anr6UAgLabrp1zaHPHmATn+kb4k+Q=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="zxing.dll" size="450560">
+      <assemblyIdentity name="zxing" version="0.16.2.0" publicKeyToken="4E88037AC681FE60" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>MTPX8HftJLf7+mrFmsM4ocVZOh+sTeIMqrFby+pX1zc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Database.mdf" size="8388608" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>JrHLyE/6iOXGEe/YF9QvFtenKN940i1XBzJhZvGhM9w=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Database_log.ldf" size="8388608" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>MZDxmLl57K3yUkZ9fzvlgHbgxFjQFTdnM7Gud7/kuW8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="logonovy-02_1.ico" size="6134">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>CU3+k3mOiAkFAcEWhWcBLeaJDz7oEhIScGC5RK35MJ0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Trx.exe.config" size="516">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ideK3qWFuCYEVNlecRnhc5eimmTb20mjcGfouTZc2J0=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-3THPOIH\Vladislav" issuerKeyHash="733e26271705146a8c4c5e5cbbfe2669fc81af06" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>amAagLPmDPiyA5Zke80307MLKNWg2aX4oJqU29oe+pA=</DigestValue></Reference></SignedInfo><SignatureValue>FpUDZC+l+cqq9SWESu3poZUifS/n8sYxhop/HKtv3TvECmMxtPXovoeBqRaVZhrmQ6QaWyiHKlFDlfLtuf/r++k9WomQbrf8z9yZPjvBZyUJ4/iWY9YeC6fuYDMhB3UC0W0nzEeXh7k/xp/NgB23ZMOmk9pj2abn4Q7ejPas3q0=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>vpbpQyfbon8Wooa/VsSyyLXeXcwJDQ+YuSiIT170xcAfF/BqWRQNR9Wp8hE8+DU/yyXcAsjh8NA/QBBaP5Et0b3DgZHItcil6CEjVs+F+FnUqQp8GELvuDzL6ogtJynLmdGizwrBfNSSOpJPeZMi+QjpbNE3RU55/ElAaXnbWyU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="90fa1edadb949aa0f8a5d9a0d5280bb3d337cd7b649603b2f80ce6b3801a606a" Description="" Url=""><as:assemblyIdentity name="Trx.exe" version="1.0.0.7" publicKeyToken="b541348a115657ef" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-3THPOIH\Vladislav</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>OBT/lctmCP5g6EpDrBeI6+mQ88Ou74ZjxH2TXwiBlxo=</DigestValue></Reference></SignedInfo><SignatureValue>RLq0Yfm6Kkiw1I4YZya7KLuIoOBxrS0tpvIT5dIItbgwLvk8KL9yoDZsZkluOKMy/yH5N8EXOeQMami3WZCMYfTvrvRYW2uWaBnnmn4BNohNzx9NxXj2IF+j7p/F1ekXTCm1zk53yfM9zUBZ4eZVX9cTFj9LJGkZK8JhEVqQj1E=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>vpbpQyfbon8Wooa/VsSyyLXeXcwJDQ+YuSiIT170xcAfF/BqWRQNR9Wp8hE8+DU/yyXcAsjh8NA/QBBaP5Et0b3DgZHItcil6CEjVs+F+FnUqQp8GELvuDzL6ogtJynLmdGizwrBfNSSOpJPeZMi+QjpbNE3RU55/ElAaXnbWyU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB/TCCAWagAwIBAgIQVOZ4e5ZCSr1BCfnNz7+b0DANBgkqhkiG9w0BAQsFADA9MTswOQYDVQQDHjIARABFAFMASwBUAE8AUAAtADMAVABIAFAATwBJAEgAXABWAGwAYQBkAGkAcwBsAGEAdjAeFw0xODA0MTMxODA4NDlaFw0xOTA0MTQwMDA4NDlaMD0xOzA5BgNVBAMeMgBEAEUAUwBLAFQATwBQAC0AMwBUAEgAUABPAEkASABcAFYAbABhAGQAaQBzAGwAYQB2MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC+lulDJ9uifxaihr9WxLLItd5dzAkND5i5KIhPXvTFwB8X8GpZFA1H1anyETz4NT/LJdwCyOHw0D9AEFo/kS3RvcOBkci1yKXoISNWz4X4WdSpCnwYQu+4PMvqiC0nKcuZ0aLPCsF81JI6kk95kyL5COls0TdFTnn8SUBpedtbJQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAD3hlSSaKLB+ERRrieCpSoJJKWvdBgjghVA24k/hAGUpQT7OnvZYPat5UoUeOL0Td0QZr2TYIhzPm6Tqp6Oo99N6PB00tQLKSbY4Kddusq7zRQwBheGba0c8H1Ybr7b/p4SRJA7qNm7wJ2jSfmmRXz3MYzgkRb9A2eos92HbEp3q</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
